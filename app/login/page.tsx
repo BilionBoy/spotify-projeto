@@ -5,12 +5,10 @@ export default function LoginPage() {
         <div className="flex items-center justify-center min-h-screen bg-black">
             <div className="w-full max-w-md p-8 space-y-6 bg-[#191919] rounded-lg shadow-lg">
                 <div className="flex flex-col items-center space-y-4">
-                    <Image
-                        src="/logo.png"
+                    <img
+                        src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
                         alt="Spotify Logo"
-                        width={120}
-                        height={120}
-                        className="mb-6"
+                        className="h-12 mb-4"
                     />
                     <h1 className="text-2xl font-bold text-white">Entrar no Spotify</h1>
                 </div>
