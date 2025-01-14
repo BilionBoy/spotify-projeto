@@ -1,40 +1,51 @@
 import React from "react";
-import { Button } from "@/components/ui/button"; 
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const LoginPage = () => {
     return (
-        <div className="flex justify-center items-center h-screen bg-gradient-to-r from-green-500 to-blue-500">
-            <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-                <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
-                    Welcome Back
-                </h2>
+        <div className="flex justify-center items-center h-screen bg-black">
+            <div className="bg-[#121212] text-white p-8 rounded-lg shadow-lg w-full max-w-md">
+                <div className="flex flex-col items-center mb-6">
+                    <img
+                        src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+                        alt="Spotify Logo"
+                        className="h-12 mb-4"
+                    />
+                    <h2 className="text-2xl font-bold">Entrar no Spotify</h2>
+                </div>
+
                 <form className="space-y-6">
-                    <div className="space-y-4">
+                    <div className="flex flex-col space-y-4">
                         <Input
                             type="email"
-                            placeholder="Email Address"
-                            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                            placeholder="E-mail ou nome de usuário"
+                            className="w-full p-3 border border-gray-700 bg-[#282828] rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                         />
                         <Input
                             type="password"
-                            placeholder="Password"
-                            className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                            placeholder="Senha"
+                            className="w-full p-3 border border-gray-700 bg-[#282828] rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                         />
                     </div>
 
                     <Button
-                        className="w-full py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-200"
+                        className="w-full py-3 bg-green-500 text-white font-bold rounded-md hover:bg-green-600 transition duration-200"
                     >
-                        Log in
+                        Entrar
                     </Button>
                 </form>
 
-                <div className="mt-6 text-center text-gray-600">
+                <div className="mt-6 text-center text-gray-400">
+                    <p className="mb-2">
+                        <a href="#" className="text-white hover:underline">
+                            Esqueceu sua senha?
+                        </a>
+                    </p>
                     <p>
-                        Don't have an account?{" "}
-                        <a href="/signup" className="text-blue-500 hover:underline">
-                            Sign up
+                        Não tem uma conta?{" "}
+                        <a href="/signup" className="text-green-500 hover:underline">
+                            Inscreva-se no Spotify
                         </a>
                     </p>
                 </div>
