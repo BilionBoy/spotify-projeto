@@ -15,12 +15,13 @@ export default function LoginPage() {
                 </div>
                 <h1 className="text-2xl font-bold text-white text-center">Entrar no Spotify</h1>
 
-                {/* Botões de Login Social */}
                 <div className="flex flex-col space-y-3">
                     <GoogleLogo />
                     <FacebookLogo />
                     <AppleLogo />
                 </div>
+
+                <div className="border-t border-white/20 mt-6"></div>
 
                 {/* Formulário de Login */}
                 <div className="space-y-6">
@@ -35,9 +36,12 @@ export default function LoginPage() {
                             autoComplete="email"
                             required
                             placeholder="Insira seu e-mail"
-                            className="w-full px-4 py-3 text-base text-white bg-[#333] border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-500"
+                            className="w-full px-4 py-3 text-base text-white bg-[#121212] border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-white/50"
                         />
                     </div>
+
+
+
                     <div>
                         <label htmlFor="password" className="block text-sm font-medium text-white mb-2">
                             Senha
@@ -49,9 +53,10 @@ export default function LoginPage() {
                             autoComplete="current-password"
                             required
                             placeholder="Insira sua senha"
-                            className="w-full px-4 py-3 text-base text-white bg-[#333] border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-gray-500"
+                            className="w-full px-4 py-3 text-base text-white bg-[#121212] border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-white/50"
                         />
                     </div>
+
                     <button className="w-full px-4 py-3 text-base font-bold text-white bg-green-500 rounded-full hover:bg-green-600">
                         Entrar
                     </button>
