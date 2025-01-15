@@ -1,6 +1,3 @@
-import GoogleLogo from '@/components/ui/logos/GoogleLogo';
-import FacebookLogo from '@/components/ui/logos/FacebookLogo';
-import AppleLogo from '@/components/ui/logos/AppleLogo';
 import Input from '@/components/ui/input';
 
 const LoginForm = () => {
