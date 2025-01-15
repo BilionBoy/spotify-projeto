@@ -4,15 +4,13 @@ import AppleLogo from '@/components/ui/logos/AppleLogo';
 
 export default function LoginPage() {
     return (
-        <div className="login-container flex items-center justify-center min-h-screen bg-gradient-to-b from-black via-[#121212] to-[#191919]">
-            {/* Login Box */}
-            <div className="w-full max-w-lg p-10 space-y-6 bg-gradient-to-br from-[#121212] via-[#181818] to-[#121212] ">
-                {/* Logo e Título */}
+        <div className="login-container flex items-center justify-center min-h-screen bg-gradient-to-b from-black via-[#191919] to-[#191919]">
+            <div className="w-full max-w-lg p-8 space-y-6 bg-gradient-to-br from-[#121212] via-[#181818] to-[#121212] rounded-lg shadow-lg min-h-[750px] sm:min-h-[800px]">
                 <div className="flex flex-col items-center space-y-4">
                     <img
                         src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
                         alt="Spotify Logo"
-                        className="h-12 mb-2"
+                        className="h-12 mb-1"
                     />
                 </div>
                 <h1 className="text-2xl font-bold text-white text-center">Entrar no Spotify</h1>
