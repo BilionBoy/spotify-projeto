@@ -1,22 +1,32 @@
-import * as React from "react"
+// components/ui/input.tsx
+import React from 'react';
 
-import { cn } from "@/lib/utils"
+interface InputProps {
+  id: string;
+  name: string;
+  type: string;
+  placeholder: string;
+  required?: boolean;
+  autoComplete?: string;
+}
 
-const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
-  ({ className, type, ...props }, ref) => {
-    return (
+const Input: React.FC<InputProps> = ({ id, name, type, placeholder, required = false, autoComplete = '' }) => {
+  return (
+    <div>
+      <label htmlFor={id} className="block text-sm font-medium text-white mb-2">
+        {placeholder}
+      </label>
       <input
+        id={id}
+        name={name}
         type={type}
-        className={cn(
-          "flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
-          className
-        )}
-        ref={ref}
-        {...props}
+        autoComplete={autoComplete}
+        required={required}
+        placeholder={placeholder}
+        className="w-full px-4 py-3 text-base text-white bg-[#121212] border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-white/50"
       />
-    )
-  }
-)
-Input.displayName = "Input"
+    </div>
+  );
+};
 
-export { Input }
+export default Input;

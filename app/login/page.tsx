@@ -1,6 +1,7 @@
 import GoogleLogo from '@/components/ui/logos/GoogleLogo';
 import FacebookLogo from '@/components/ui/logos/FacebookLogo';
 import AppleLogo from '@/components/ui/logos/AppleLogo';
+import LoginForm from '@/components/ui/LoginForm'; // Importe o LoginForm
 
 export default function LoginPage() {
     return (
@@ -8,7 +9,7 @@ export default function LoginPage() {
             <div className="w-full max-w-lg p-8 space-y-6 bg-gradient-to-br from-[#121212] via-[#181818] to-[#121212] rounded-lg shadow-lg min-h-[750px] sm:min-h-[800px]">
                 <div className="flex flex-col items-center space-y-4">
                     <img
-                        src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+                        src="spotify.png"
                         alt="Spotify Logo"
                         className="h-12 mb-1"
                     />
@@ -20,49 +21,10 @@ export default function LoginPage() {
                     <FacebookLogo />
                     <AppleLogo />
                 </div>
-
                 <div className="border-t border-white/20 mt-6"></div>
 
-                {/* Formulário de Login */}
-                <div className="space-y-6">
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
-                            E-mail ou nome de usuário
-                        </label>
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            autoComplete="email"
-                            required
-                            placeholder="Insira seu e-mail"
-                            className="w-full px-4 py-3 text-base text-white bg-[#121212] border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-white/50"
-                        />
-                    </div>
+                <LoginForm />
 
-
-
-                    <div>
-                        <label htmlFor="password" className="block text-sm font-medium text-white mb-2">
-                            Senha
-                        </label>
-                        <input
-                            id="password"
-                            name="password"
-                            type="password"
-                            autoComplete="current-password"
-                            required
-                            placeholder="Insira sua senha"
-                            className="w-full px-4 py-3 text-base text-white bg-[#121212] border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 placeholder-white/50"
-                        />
-                    </div>
-
-                    <button className="w-full px-4 py-3 text-base font-bold text-white bg-green-500 rounded-full hover:bg-green-600">
-                        Entrar
-                    </button>
-                </div>
-
-                {/* Links Inferiores */}
                 <div className="flex flex-col items-center mt-4 space-y-2">
                     <a href="#" className="text-sm text-gray-400 hover:underline">
                         Esqueceu sua senha?
