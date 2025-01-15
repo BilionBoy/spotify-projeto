@@ -16,7 +16,7 @@ export default function LoginPage() {
                 <h1 className="text-2xl font-bold text-white text-center">Entrar no Spotify</h1>
 
                 {/* Botões de Login Social */}
-                <div className="space-y-3">
+                <div className="flex flex-col space-y-3">
                     <GoogleLogo />
                     <FacebookLogo />
                     <AppleLogo />
