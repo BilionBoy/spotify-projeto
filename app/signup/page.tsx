@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import GoogleCadastro from '@/components/ui/logos/GoogleCadastro';
 import FacebookCadastro from '@/components/ui/logos/FacebookCadastro';
 import AppleCadastro from '@/components/ui/logos/AppleCadastro';
 import SpotifyLogo from '@/components/ui/logos/SpotifyLogo';
 import Input from '@/components/ui/input';
+
 export default function SignupPage() {
     return (
         <div className="flex flex-col items-center justify-start min-h-screen pt-10 relative">
@@ -49,15 +51,21 @@ export default function SignupPage() {
 
                 {/* Divisor */}
                 <div className="relative my-6">
-                    <div className="absolute inset-0 flex items-center">
-                        <div className="w-full border-t border-neutral-600"></div>
-                    </div>
-                    <div className="relative flex justify-center text-sm">
-                        <span className="px-2 text-gray-400 bg-neutral-900">
+                    <div className="flex items-center justify-center">
+                        {/* Linha à esquerda */}
+                        <div className="flex-grow border-t border-white"></div>
+                        {/* Texto 'ou' */}
+                        <span className="px-2 text-sm text-gray-400">
                             ou
                         </span>
+                        {/* Linha à direita */}
+                        <div className="flex-grow border-t border-white"></div>
                     </div>
                 </div>
+
+
+
+
 
                 {/* Botões de Redes Sociais */}
                 <div className="flex flex-col space-y-4">
