@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+
 const FooterCadastro = () => {
     return (
         <div className=" text-center text-sm text-gray-400 z-10 relative">
