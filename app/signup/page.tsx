@@ -1,9 +1,9 @@
+import SignupTitle from '@/components/ui/SignupTitle';
+import SignupForm from '@/components/ui/SignupForm';
 import GoogleCadastro from '@/components/ui/logos/GoogleCadastro';
 import FacebookCadastro from '@/components/ui/logos/FacebookCadastro';
 import AppleCadastro from '@/components/ui/logos/AppleCadastro';
-import SignupForm from '@/components/ui/SignupForm';
-import FooterCadastro from '@/components/ui/FooterCadastro';
-import SignupTitle from '@/components/ui/SignupTitle';
+import SingupFooter from '@/components/ui/SingupFooter';
 
 export default function SignupPage() {
     return (
@@ -20,7 +20,7 @@ export default function SignupPage() {
                 </div>
             </div>
             {/* Footer */}
-            <FooterCadastro />
+            <SingupFooter />
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 
-const FooterCadastro = () => {
+const SingupFooter = () => {
     return (
         <div className=" text-center text-sm text-gray-400 z-10 relative">
             <p className="encore-text encore-text-marginal" data-encore-id="text">
@@ -31,4 +31,4 @@ const FooterCadastro = () => {
     );
 };
 
-export default FooterCadastro;
+export default SingupFooter;
