@@ -33,7 +33,7 @@ const LoginForm = () => {
                     </a>
                     <p className="text-sm text-gray-400">
                         Não tem uma conta?{' '}
-                        <a href="#" className="font-medium text-white hover:no-underline">
+                        <a href="/signup" className="font-medium text-white hover:no-underline">
                             Inscrever-se no Spotify
                         </a>
                     </p>
