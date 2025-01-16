@@ -14,11 +14,12 @@ export default function SignupPage() {
                 </div>
                 <h1
                     className="text-[48px] font-extrabold text-white text-center tracking-tight leading-tight"
-                    data-encore-id="text"
+                    style={{ fontFamily: 'var(--encore-title-font-stack)' }}
                 >
-                    Se inscreva
-                    e comece a curtir
+                    <span className="block">Se inscreva e</span>
+                    <span className="block">comece a curtir</span>
                 </h1>
+
             </div>
 
             {/* Formulário */}
@@ -66,7 +67,7 @@ export default function SignupPage() {
             {/* Rodapé */}
             <div className="mt-8 text-center text-sm text-gray-400">
                 Já tem uma conta?{' '}
-                <a href="#" className="text-white hover:underline">
+                <a href="login" className="text-white hover:underline">
                     Faça login aqui.
                 </a>
             </div>
