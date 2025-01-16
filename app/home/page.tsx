@@ -12,9 +12,8 @@ const HomePage = () => {
 
             {/* Main Content */}
             <div className="flex-1 flex flex-col">
-                {/* Main Content Area */}
-                <main className="flex-1 p-6 bg-gray-900 text-white">
-                    <h1 className="text-2xl font-bold mb-6">Bem-vindo ao Spotify</h1>
+                <main className="flex-1 p-6 bg-gray-900 text-white space-y-6">
+                    <h1 className="text-2xl font-bold mb-4">Bem-vindo ao Spotify</h1>
 
                     {/* Cards de Playlists */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
