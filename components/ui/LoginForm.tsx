@@ -28,13 +28,13 @@ const LoginForm = () => {
                 <button className="w-full px-4 py-3 text-base font-bold text-black bg-green-500 rounded-full hover:bg-green-600">
                     Entrar
                 </button>
-                <div className="flex flex-col items-center mt-4 space-y-2">
+                <div className="flex flex-col  items-center mt-4 space-y-2">
                     <a href="#" className="text-sm text-white underline">
                         Esqueceu sua senha?
                     </a>
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm  text-gray-400">
                         Não tem uma conta?{' '}
-                        <a href="/signup" className="font-medium text-white hover:no-underline">
+                        <a href="/signup" className="font-medium text-white underline">
                             Inscrever-se no Spotify
                         </a>
                     </p>
