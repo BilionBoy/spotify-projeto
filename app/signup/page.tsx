@@ -1,6 +1,6 @@
-import GoogleLogo from '@/components/ui/logos/GoogleLogo';
-import FacebookLogo from '@/components/ui/logos/FacebookLogo';
-import AppleLogo from '@/components/ui/logos/AppleLogo';
+import GoogleCadastro from '@/components/ui/logos/GoogleCadastro';
+import FacebookCadastro from '@/components/ui/logos/FacebookCadastro';
+import AppleCadastro from '@/components/ui/logos/AppleCadastro';
 import SpotifyLogo from '@/components/ui/logos/SpotifyLogo';
 import Input from '@/components/ui/input';
 
@@ -63,9 +63,9 @@ export default function SignupPage() {
 
                 {/* Botões de Redes Sociais */}
                 <div className="flex flex-col space-y-4">
-                    <GoogleLogo />
-                    <FacebookLogo />
-                    <AppleLogo />
+                    <GoogleCadastro />
+                    <FacebookCadastro />
+                    <AppleCadastro />
                 </div>
             </div>
 
