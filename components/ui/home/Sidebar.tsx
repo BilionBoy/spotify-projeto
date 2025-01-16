@@ -1,27 +1,52 @@
-import Link from "next/link";
-import HomeIcon from "@/components/ui/shared/icons/HomeIcon";
-import SearchIcon from "@/components/ui/shared/icons/SearchIcon";
-import LibraryIcon from "@/components/ui/shared/icons/LibraryIcon";
+// components/ui/home/Sidebar.tsx
+
+"use client";
+
+import { HomeIcon, SearchIcon, LibraryIcon } from "../icons"; // Agora, os ícones vêm diretamente de home/icons
 
 const Sidebar = () => {
     return (
-        <aside className="w-64 h-screen bg-black text-gray-400 flex flex-col">
-            <div className="p-4 text-xl font-bold text-white">Spotify</div>
-            <nav className="mt-4 flex flex-col space-y-2">
-                <Link href="/" className="px-4 py-2 flex items-center space-x-4 hover:bg-gray-800 rounded">
-                    <HomeIcon />
-                    <span>Home</span>
-                </Link>
-                <Link href="/search" className="px-4 py-2 flex items-center space-x-4 hover:bg-gray-800 rounded">
-                    <SearchIcon />
-                    <span>Buscar</span>
-                </Link>
-                <Link href="/library" className="px-4 py-2 flex items-center space-x-4 hover:bg-gray-800 rounded">
-                    <LibraryIcon />
-                    <span>Sua Biblioteca</span>
-                </Link>
-            </nav>
-        </aside>
+        <div className="w-64 bg-[#121212] p-6 flex flex-col space-y-4">
+            {/* Logo do Spotify */}
+            <div className="text-white font-bold text-2xl mb-8">Spotify</div>
+
+            {/* Seção de navegação */}
+            <div className="flex flex-col space-y-4">
+                {/* Link para a Página Inicial */}
+                <div className="flex items-center text-white cursor-pointer hover:bg-[#3c3c3c] p-2 rounded-md">
+                    <HomeIcon className="w-6 h-6 mr-3" />
+                    <span className="text-sm">Página Inicial</span>
+                </div>
+
+                {/* Link para Buscar */}
+                <div className="flex items-center text-white cursor-pointer hover:bg-[#3c3c3c] p-2 rounded-md">
+                    <SearchIcon className="w-6 h-6 mr-3" />
+                    <span className="text-sm">Buscar</span>
+                </div>
+
+                {/* Link para Sua Biblioteca */}
+                <div className="flex items-center text-white cursor-pointer hover:bg-[#3c3c3c] p-2 rounded-md">
+                    <LibraryIcon className="w-6 h-6 mr-3" />
+                    <span className="text-sm">Sua Biblioteca</span>
+                </div>
+            </div>
+
+            {/* Seção de categorias estáticas */}
+            <div className="flex flex-col space-y-2 mt-8 text-white text-sm">
+                <span className="font-semibold">Playlists</span>
+                <div className="cursor-pointer hover:text-[#1db954]">Músicas</div>
+                <div className="cursor-pointer hover:text-[#1db954]">Álbuns</div>
+                <div className="cursor-pointer hover:text-[#1db954]">Artistas</div>
+                <div className="cursor-pointer hover:text-[#1db954]">Podcasts</div>
+            </div>
+
+            {/* Outras opções (opcionais) */}
+            <div className="flex flex-col space-y-2 mt-8 text-white text-sm">
+                <div className="cursor-pointer hover:text-[#1db954]">Estações de rádio</div>
+                <div className="cursor-pointer hover:text-[#1db954]">Discover Weekly</div>
+                <div className="cursor-pointer hover:text-[#1db954]">Lançamentos</div>
+            </div>
+        </div>
     );
 };
 
