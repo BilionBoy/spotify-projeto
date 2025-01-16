@@ -2,7 +2,10 @@
 
 "use client";
 
-import { HomeIcon, SearchIcon, LibraryIcon } from "../icons"; // Agora, os ícones vêm diretamente de home/icons
+import HomeIcon from "./icons/HomeIcon";
+import SearchIcon from "./icons/SearchIcon";
+import LibraryIcon from "./icons/LibraryIcon";
+
 
 const Sidebar = () => {
     return (
