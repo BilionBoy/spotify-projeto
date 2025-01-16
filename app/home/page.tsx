@@ -1,5 +1,5 @@
-import Sidebar from "@/components/ui/home/Sidebar";
-import Player from "@/components/ui/home/Player";
+import Sidebar from "../../components/ui/home/Sidebar";
+import Player from "../../components/ui/home/Player";
 
 export default function HomePage() {
     return (
