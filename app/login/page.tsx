@@ -1,9 +1,9 @@
+import SpotifyLogo from '@/components/ui/logos/SpotifyLogo';
 import GoogleLogo from '@/components/ui/logos/GoogleLogo';
 import FacebookLogo from '@/components/ui/logos/FacebookLogo';
 import AppleLogo from '@/components/ui/logos/AppleLogo';
-import LoginForm from '@/components/ui/LoginForm';
-import SpotifyLogo from '@/components/ui/logos/SpotifyLogo';
 import ContinuarText from '@/components/ui/logos/ContinuarText';
+import LoginForm from '@/components/ui/LoginForm';
 
 export default function LoginPage() {
     return (

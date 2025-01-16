@@ -3,7 +3,7 @@ const SpotifyLogo = () => {
         <img
             src="spotify.png"
             alt="Spotify Logo"
-            className="h-12 mb-1"
+            className="h-5 sm:h-12 mb-2 sm:mb-1"
         />
     );
 };
