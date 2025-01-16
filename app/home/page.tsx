@@ -38,6 +38,27 @@ const HomePage = () => {
                             title="Playlist 4"
                             description="Melhores hits do momento"
                         />
+                        {/* Mais Playlists */}
+                        <PlaylistCard
+                            imageSrc="/images/playlist5.jpg"
+                            title="Playlist 5"
+                            description="Músicas calmas para relaxar"
+                        />
+                        <PlaylistCard
+                            imageSrc="/images/playlist6.jpg"
+                            title="Playlist 6"
+                            description="A playlist perfeita para sua festa"
+                        />
+                        <PlaylistCard
+                            imageSrc="/images/playlist7.jpg"
+                            title="Playlist 7"
+                            description="Músicas indie para ouvir no fim do dia"
+                        />
+                        <PlaylistCard
+                            imageSrc="/images/playlist8.jpg"
+                            title="Playlist 8"
+                            description="Top hits de todos os tempos"
+                        />
                     </div>
                 </main>
 
