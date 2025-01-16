@@ -13,12 +13,17 @@ export default function SignupPage() {
                     <SpotifyLogo />
                 </div>
                 <h1
-                    className="text-[48px] font-extrabold text-white text-center tracking-tight leading-tight"
-                    style={{ fontFamily: 'var(--encore-title-font-stack)' }}
+                    className="text-[48px] font-extrabold text-white text-center tracking-tighter leading-tight"
+                    style={{
+                        fontFamily: 'SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, sans-serif'
+                    }}
                 >
                     <span className="block">Se inscreva e</span>
                     <span className="block">comece a curtir</span>
                 </h1>
+
+
+
 
             </div>
 
