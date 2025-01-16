@@ -33,15 +33,8 @@ const SignupForm = () => {
                     <span className="px-2 text-sm text-white">ou</span>
                     <div className="flex-grow border-t border-gray-600"></div>
                 </div>
-                <div className="mt-6 text-center">
-                    <p className="text-sm text-gray-400">
-                        Já tem uma conta?{' '}
-                        <a href="login" className="text-white hover:underline">
-                            Faça login aqui.
-                        </a>
-                    </p>
-                </div>
             </div>
+            
         </div>
     );
 };

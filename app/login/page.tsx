@@ -3,6 +3,7 @@ import FacebookLogo from '@/components/ui/logos/FacebookLogo';
 import AppleLogo from '@/components/ui/logos/AppleLogo';
 import LoginForm from '@/components/ui/LoginForm';
 import SpotifyLogo from '@/components/ui/logos/SpotifyLogo'; 
+import ContinuarText from '@/components/ui/logos/ContinuarText';
 
 export default function LoginPage() {
     return (
@@ -12,14 +13,13 @@ export default function LoginPage() {
                     <SpotifyLogo />
                 <h1 className="text-2xl font-bold text-white text-center">Entrar no Spotify</h1>
                 </div>
-
                 <div className="flex flex-col space-y-3">
                     <GoogleLogo />
                     <FacebookLogo />
                     <AppleLogo />
+                    <ContinuarText />
                 </div>
                 <div className="border-t border-white/20 mt-6"></div>
-
                 <LoginForm />
 
                 

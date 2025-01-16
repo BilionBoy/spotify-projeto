@@ -4,8 +4,6 @@ import Link from 'next/link';
 const LoginForm = () => {
     return (
         <div>
-            {/* Linha de separação */}
-            <div className="my-4 border-t border-gray-800 w-full"></div>
 
             {/* Formulário de Login */}
             <div className="space-y-3 mt-6">
@@ -42,15 +40,6 @@ const LoginForm = () => {
                     </p>
                 </div>
                 
-                {/* Link de login */}
-                <div className="mt-6 text-center">
-                    <p className="text-sm text-gray-400">
-                        Já tem uma conta?{' '}
-                        <Link href="login" className="text-white hover:underline">
-                            Faça login aqui.
-                        </Link>
-                    </p>
-                </div>
 
             </div>
 
