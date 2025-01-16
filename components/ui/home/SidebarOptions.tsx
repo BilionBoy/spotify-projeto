@@ -1,30 +1,24 @@
+"use client";
+
 import Link from "next/link";
+import { FC } from "react";
 
-interface Option {
-    name: string;
-    path: string;
-}
-
-const options: Option[] = [
-    { name: "Estações de rádio", path: "/stations" },
-    { name: "Discover Weekly", path: "/discover-weekly" },
-    { name: "Lançamentos", path: "/releases" },
-];
-
-const SidebarOptions = () => {
+const SidebarOptions: FC = () => {
     return (
-        <div className="mt-6">
-            <div className="flex flex-col space-y-2">
-                {options.map((option) => (
-                    <Link
-                        key={option.name}
-                        href={option.path}
-                        className="cursor-pointer hover:text-[#1db954] transition-colors"
-                    >
-                        {option.name}
-                    </Link>
-                ))}
-            </div>
+        <div className="flex flex-col space-y-3 mt-auto">
+            <span className="text-white text-sm font-semibold">Opções</span>
+            <Link
+                href="/settings"
+                className="flex items-center cursor-pointer hover:bg-[#282828] p-3 rounded-lg transition-all duration-300 ease-in-out transform"
+            >
+                <span className="text-base font-medium">Configurações</span>
+            </Link>
+            <Link
+                href="/account"
+                className="flex items-center cursor-pointer hover:bg-[#282828] p-3 rounded-lg transition-all duration-300 ease-in-out transform"
+            >
+                <span className="text-base font-medium">Conta</span>
+            </Link>
         </div>
     );
 };

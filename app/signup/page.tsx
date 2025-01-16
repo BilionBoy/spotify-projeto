@@ -18,7 +18,7 @@ export default function SignupPage() {
                     <FacebookCadastro />
                     <AppleCadastro />
                     {/* Linha de separação */}
-                    <div className="my-4 border-t border-gray-800 w-full"></div> 
+                    <div className="my-4 border-t border-gray-800 w-full"></div>
                     <div className="mt-6 text-center">
                         <p className="text-sm text-gray-400">
                             Já tem uma conta?{' '}
