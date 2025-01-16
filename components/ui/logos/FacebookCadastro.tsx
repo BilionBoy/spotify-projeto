@@ -11,7 +11,7 @@ const FacebookCadastro = () => {
                 height={20}
                 className="mr-3" 
             />
-            <span className="text-center w-full">Inscreva-se com o Facebook</span>
+            <span className="text-center w-full">Inscrever-se com o Facebook</span>
         </button>
     );
 };

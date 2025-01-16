@@ -8,6 +8,8 @@ interface InputProps {
   placeholder: string;
   required?: boolean;
   autoComplete?: string;
+  className?: string; // Permite className opcional
+
 }
 
 const Input: React.FC<InputProps> = ({ id, name, type, placeholder, required = false, autoComplete = '' }) => {
