@@ -6,12 +6,18 @@ import Input from '@/components/ui/input';
 
 export default function SignupPage() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black to-neutral-900">
+        <div className="flex flex-col items-center justify-start min-h-screen bg-gradient-to-b from-black to-neutral-900 pt-10">
             {/* Logo e Título */}
-            <div className="flex flex-col items-center mb-10">
-               <SpotifyLogo/>
-                <h1 className="text-4xl font-extrabold text-white text-center tracking-wide">
-                    Inscreva-se e comece a curtir
+            <div className="flex flex-col items-center mb-8">
+                <div className="mb-6">
+                    <SpotifyLogo />
+                </div>
+                <h1
+                    className="text-[48px] font-extrabold text-white text-center tracking-tight leading-tight"
+                    data-encore-id="text"
+                >
+                    Se inscreva
+                    e comece a curtir
                 </h1>
             </div>
 
@@ -48,6 +54,8 @@ export default function SignupPage() {
                         </span>
                     </div>
                 </div>
+
+                {/* Botões de Redes Sociais */}
                 <div className="flex flex-col space-y-4">
                     <GoogleLogo />
                     <FacebookLogo />
