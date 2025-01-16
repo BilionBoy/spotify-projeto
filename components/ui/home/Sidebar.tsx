@@ -1,4 +1,3 @@
-import React from "react";
 import HomeIcon from "@/components/ui/shared/icons/HomeIcon";
 import SearchIcon from "@/components/ui/shared/icons/SearchIcon";
 import LibraryIcon from "@/components/ui/shared/icons/LibraryIcon";
