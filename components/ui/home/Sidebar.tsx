@@ -1,54 +1,48 @@
-// components/ui/home/Sidebar.tsx
-
 "use client";
 
+import Link from "next/link";
 import HomeIcon from "./icons/HomeIcon";
 import SearchIcon from "./icons/SearchIcon";
 import LibraryIcon from "./icons/LibraryIcon";
-
+import SidebarOptions from "./SidebarOptions";
+import SidebarPlaylists from "./SidebarPlaylists";
 
 const Sidebar = () => {
     return (
-        <div className="w-64 bg-[#121212] p-6 flex flex-col space-y-4">
+        <div className="w-64 bg-[#121212] p-6 flex flex-col space-y-6">
             {/* Logo do Spotify */}
-            <div className="text-white font-bold text-2xl mb-8">Spotify</div>
+            <div className="text-white font-extrabold text-3xl mb-6 tracking-wide">
+                Spotify
+            </div>
 
             {/* Seção de navegação */}
-            <div className="flex flex-col space-y-4">
-                {/* Link para a Página Inicial */}
-                <div className="flex items-center text-white cursor-pointer hover:bg-[#3c3c3c] p-2 rounded-md">
-                    <HomeIcon className="w-6 h-6 mr-3" />
-                    <span className="text-sm">Página Inicial</span>
-                </div>
-
-                {/* Link para Buscar */}
-                <div className="flex items-center text-white cursor-pointer hover:bg-[#3c3c3c] p-2 rounded-md">
-                    <SearchIcon className="w-6 h-6 mr-3" />
-                    <span className="text-sm">Buscar</span>
-                </div>
-
-                {/* Link para Sua Biblioteca */}
-                <div className="flex items-center text-white cursor-pointer hover:bg-[#3c3c3c] p-2 rounded-md">
-                    <LibraryIcon className="w-6 h-6 mr-3" />
-                    <span className="text-sm">Sua Biblioteca</span>
-                </div>
+            <div className="flex flex-col space-y-3">
+                <Link
+                    href="/home"
+                    className="flex items-center text-white cursor-pointer hover:bg-[#282828] p-3 rounded-lg transition-colors duration-200"
+                >
+                    <HomeIcon className="w-7 h-7 mr-4" />
+                    <span className="text-base font-medium">Página Inicial</span>
+                </Link>
+                <Link
+                    href="/search"
+                    className="flex items-center text-white cursor-pointer hover:bg-[#282828] p-3 rounded-lg transition-colors duration-200"
+                >
+                    <SearchIcon className="w-7 h-7 mr-4" />
+                    <span className="text-base font-medium">Buscar</span>
+                </Link>
+                <Link
+                    href="/library"
+                    className="flex items-center text-white cursor-pointer hover:bg-[#282828] p-3 rounded-lg transition-colors duration-200"
+                >
+                    <LibraryIcon className="w-7 h-7 mr-4" />
+                    <span className="text-base font-medium">Sua Biblioteca</span>
+                </Link>
             </div>
 
-            {/* Seção de categorias estáticas */}
-            <div className="flex flex-col space-y-2 mt-8 text-white text-sm">
-                <span className="font-semibold">Playlists</span>
-                <div className="cursor-pointer hover:text-[#1db954]">Músicas</div>
-                <div className="cursor-pointer hover:text-[#1db954]">Álbuns</div>
-                <div className="cursor-pointer hover:text-[#1db954]">Artistas</div>
-                <div className="cursor-pointer hover:text-[#1db954]">Podcasts</div>
-            </div>
-
-            {/* Outras opções (opcionais) */}
-            <div className="flex flex-col space-y-2 mt-8 text-white text-sm">
-                <div className="cursor-pointer hover:text-[#1db954]">Estações de rádio</div>
-                <div className="cursor-pointer hover:text-[#1db954]">Discover Weekly</div>
-                <div className="cursor-pointer hover:text-[#1db954]">Lançamentos</div>
-            </div>
+            {/* Categorias */}
+            <SidebarPlaylists />
+            <SidebarOptions />
         </div>
     );
 };
